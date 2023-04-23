@@ -3,7 +3,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AllPosts from "./components/AllPosts";
 import OnePost from "./components/OnePost";
-import Author from "./components/author";
+import Author from "./components/Author";
 function App() {
   const router = createBrowserRouter([
     {
