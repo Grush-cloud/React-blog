@@ -1,7 +1,7 @@
 // src/App.js
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AllPosts from "./components/Allposts";
+import AllPosts from "./components/AllPosts";
 import OnePost from "./components/OnePost";
 import Author from "./components/author";
 function App() {
