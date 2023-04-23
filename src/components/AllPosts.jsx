@@ -53,7 +53,7 @@ export default function AllPosts() {
         {filteredPosts &&
           filteredPosts.map((post, index) => (
             <Link
-              to={"/React-blog-app" + post.slug.current}
+              to={"/React-blog-app/" + post.slug.current}
               key={post.slug.current}
               className="allposts-card"
             >
