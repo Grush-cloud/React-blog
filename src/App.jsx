@@ -7,7 +7,7 @@ import Author from "./components/Author";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/React-blog-app",
+      path: "/React-blog",
       element: (
         <div>
           <AllPosts />
@@ -16,7 +16,7 @@ function App() {
       ),
     },
     {
-      path: "/React-blog-app/:slug",
+      path: "/React-blog/:slug",
       element: (
         <div>
           <OnePost />
