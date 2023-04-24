@@ -1,5 +1,6 @@
 /* Global */
 /* beige, terracotta, and olive */
+
 body {
   /* background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -8,6 +9,7 @@ body {
     rgba(226, 114, 91, 1) 50%,
     rgba(245, 245, 220, 1) 100%
   ); */
+
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
@@ -38,12 +40,12 @@ body {
   font-weight: 500;
   margin-bottom: 50px;
 }
-.blog-search {
+.blog-search-container {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
-input[type="search"] {
+.blog-search-active {
   background-color: #f8f8f8;
   border: none;
   border-radius: 20px;
@@ -58,15 +60,22 @@ input[type="search"] {
   background-size: 30px;
 }
 
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
+.blog-search-inactive {
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 20px;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-input[type="search"]::placeholder {
+.blog-search::placeholder {
   color: #999;
 }
 
-input[type="search"]:focus {
+.blog-search:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -123,6 +132,24 @@ input[type="search"]:focus {
 }
 
 /* OnePost */
+.onepost-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.onepost-title {
+  font-size: 1.4rem;
+  margin-bottom: 0px;
+  color: beige;
+}
+
+.onepost-date {
+  font-size: 1rem;
+  margin-bottom: 0px;
+  color: beige;
+}
 .onepost {
   margin-top: 25px;
   display: flex;
@@ -146,13 +173,7 @@ input[type="search"]:focus {
   border-width: thin;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.onepost-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 0px;
-  color: beige;
+  margin-bottom: 30px;
 }
 
 .onepost-body {
@@ -163,13 +184,17 @@ input[type="search"]:focus {
 }
 
 /* Author */
-.card {
+.author-section > h3 {
+  text-align: center;
+  color: beige;
+}
+.author-card {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 16px;
-  width: 1000px;
-  margin: 50px auto 0;
+
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,6 +236,40 @@ input[type="search"]:focus {
   text-align: center;
 }
 
+/* Footer */
+
+.sticky-footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7vh;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(253, 171, 155) 0%,
+    rgba(226, 114, 91, 1) 50%,
+    rgb(131, 31, 11) 100%
+  );
+  border-style: solid;
+  border-width: 2px;
+  border-color: #999;
+}
+
+.home-link {
+  color: beige;
+  text-decoration: none;
+}
+
+.home.link:hover {
+  color: red;
+}
+
+/* Spinner */
 .spinner {
   width: 56px;
   height: 56px;

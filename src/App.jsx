@@ -3,7 +3,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AllPosts from "./components/AllPosts";
 import OnePost from "./components/OnePost";
-import Author from "./components/Author";
+
+import Footer from "./components/Footer";
 function App() {
   const router = createBrowserRouter([
     {
@@ -11,7 +12,8 @@ function App() {
       element: (
         <div>
           <AllPosts />
-          <Author />
+
+          <Footer />
         </div>
       ),
     },
@@ -20,7 +22,8 @@ function App() {
       element: (
         <div>
           <OnePost />
-          <Author />
+
+          <Footer />
         </div>
       ),
     },
